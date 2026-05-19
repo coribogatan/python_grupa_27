@@ -110,6 +110,8 @@ print(dict_2)
 
 print() #pune endline, ca si cum ai da Enter
 
+print("end of file")
+
 
 
 

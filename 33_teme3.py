@@ -26,3 +26,40 @@ def text(var):
 
 text(var1)
 text(var2)
+
+print("Tema procesare stringuri")
+
+for s in var2:
+    if s.split("-")[0] == "ERR":
+        print("[ERROR]")
+    elif s.split("-")[0] == 'INF':
+        print("[INFO]")
+    elif s.split("-")[0] == 'WRN':
+        print("[WARNING]")
+    else: print(s.split("-")[0])
+    print(f"Mesaj: {s.split('-')[1]}")
+    print(f"Cod: {s.split("-")[2].split(":")[1]}\n")
+
+#refactorizare: mutati code-ul intr-o functie si in loc de print folositi return un string care e mesajul formatat
+
+def format_logs(param1):
+    chunks = []
+    for s in param1:
+        if s.split("-")[0] == "ERR":
+            chunks.append("[ERROR]")
+        elif s.split("-")[0] == 'INF':
+            chunks.append ("[INFO]")
+        elif s.split("-")[0] == 'WRN':
+            chunks.append ("[WARNING]")
+        else:
+            chunks.append(s.split("-")[0])
+        chunks.append(f"Mesaj: {s.split('-')[1]}")
+        chunks.append(f"Cod: {s.split("-")[2].split(":")[1]}\n")
+    str_result = "\n".join(chunks)
+    return str_result
+
+result = format_logs(var2)
+print(result)
+
+
+

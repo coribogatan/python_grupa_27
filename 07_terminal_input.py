@@ -1,7 +1,6 @@
 
 var1 = "Hello"
 print(var1)
-
 #putem sa introducem siruri de caractere prin terminal, folosind input()
 
 # var2 = input("Cum te cheama?\n")
@@ -18,6 +17,14 @@ print(var1)
 
 var4 = float(input("Ce inaltime ai, in metri?"))
 print(var4)
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,30 @@
+[
+  {
+    "title": "tema python",
+    "date": "7.7.2026 23:59",
+    "owner": "Corina",
+    "category": "course",
+    "completed": false
+  },
+  {
+    "title": "Cumpara mancare",
+    "date": "6.7.2026 18:30",
+    "owner": "Catalin",
+    "category": "shopping",
+    "completed": false
+  },
+  {
+    "title": "Buy Shoes",
+    "date": "15.07.2026 16:00",
+    "owner": "Amalia",
+    "category": "shopping",
+    "completed": false
+  },
+  {
+    "title": "tema python",
+    "date": "8.8.2026 23:59",
+    "owner": "Corina",
+    "category": "course",
+    "completed": false
+  }
+]
